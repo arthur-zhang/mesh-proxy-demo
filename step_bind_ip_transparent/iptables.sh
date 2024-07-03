@@ -1,0 +1,1 @@
+iptables -t mangle -A PREROUTING ! -d 127.0.0.1/32 -p tcp -j TPROXY --on-port 15006 --on-ip 0.0.0.0 --tproxy-mark 0x539
